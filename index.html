@@ -19,162 +19,104 @@ scroll-behavior:smooth;
 }
 
 body{
-
 font-family:'Poppins',sans-serif;
 background:linear-gradient(135deg,#071426,#0b2b45,#081b34);
 margin:0;
 color:white;
-
 }
 
-/* HERO */
-
 .hero{
-
 text-align:center;
 padding:60px 20px;
-
 }
 
 .logo img{
-
 width:95px;
 background:white;
 padding:12px;
 border-radius:24px;
 box-shadow:0 10px 40px rgba(0,0,0,.4);
-
 }
 
 .company{
-
 font-size:30px;
 font-weight:600;
 margin-top:12px;
-
 }
 
 .tagline{
-
 font-size:13px;
 letter-spacing:2px;
 color:#c8a96a;
-
 }
 
-/* CONTACT BUTTONS */
-
 .buttons{
-
 max-width:420px;
 margin:30px auto;
-
 }
 
 .button{
-
 display:flex;
 align-items:center;
 justify-content:center;
 gap:10px;
-
 padding:15px;
-
 margin:12px 0;
-
 border-radius:14px;
-
 background:rgba(255,255,255,0.08);
-
 color:white;
-
 text-decoration:none;
-
 transition:.3s;
-
 }
 
 .button:hover{
-
 transform:translateY(-3px);
 background:rgba(255,255,255,0.15);
-
 }
 
-/* SECTION */
-
 .section{
-
 max-width:1000px;
 margin:auto;
 padding:60px 20px;
-
 }
 
 .section h2{
-
 text-align:center;
 margin-bottom:25px;
 color:#c8a96a;
-
 }
 
-/* SERVICES */
-
 .services{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
-
 }
 
 .service{
-
 background:rgba(255,255,255,0.06);
 padding:25px;
 border-radius:16px;
 text-align:center;
-transition:.3s;
-
 }
-
-.service:hover{
-
-transform:translateY(-6px);
-background:rgba(255,255,255,0.12);
-
-}
-
-/* CLIENTS */
 
 .clients{
-
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
 gap:20px;
-
 }
 
 .client{
-
 background:rgba(255,255,255,0.05);
 padding:12px 18px;
 border-radius:10px;
-
 }
 
-/* SOCIAL */
-
 .social{
-
 text-align:center;
-
 }
 
 .social a{
-
 margin:8px;
 display:inline-block;
 padding:10px 16px;
@@ -182,54 +124,43 @@ background:#1c2e40;
 border-radius:10px;
 text-decoration:none;
 color:white;
-
 }
 
-/* FORM */
-
 form{
-
 display:flex;
 flex-direction:column;
 gap:12px;
 max-width:400px;
 margin:auto;
-
 }
 
 input,textarea{
-
 padding:12px;
 border-radius:8px;
 border:none;
-
 }
 
 button{
-
 padding:12px;
 background:#c8a96a;
 border:none;
 border-radius:8px;
 cursor:pointer;
-
 }
 
-/* FOOTER */
+.map{
+border-radius:12px;
+overflow:hidden;
+}
 
 .footer{
-
 text-align:center;
 padding:30px;
 font-size:13px;
 color:#aaa;
-
 }
 
-/* WHATSAPP FLOAT */
-
 .whatsapp{
-
 position:fixed;
 bottom:20px;
 right:20px;
@@ -240,7 +171,6 @@ border-radius:50%;
 font-size:22px;
 text-decoration:none;
 box-shadow:0 10px 30px rgba(0,0,0,.4);
-
 }
 
 </style>
@@ -248,8 +178,6 @@ box-shadow:0 10px 30px rgba(0,0,0,.4);
 </head>
 
 <body>
-
-<!-- HERO -->
 
 <div class="hero">
 
@@ -267,8 +195,8 @@ TELECOM • SECURITY • IT
 
 <div class="buttons">
 
-<a class="button" href="tel:+919826827103">
-<i class="fa fa-phone"></i> Call Office
+<a class="button" href="tel:9826827103">
+<i class="fa fa-phone"></i> Call
 </a>
 
 <a class="button" href="https://wa.me/919826827103">
@@ -276,7 +204,7 @@ TELECOM • SECURITY • IT
 </a>
 
 <a class="button" href="https://www.sveindia.co.in">
-<i class="fa fa-globe"></i> Official Website
+<i class="fa fa-globe"></i> Website
 </a>
 
 <a class="button" href="contact.vcf">
@@ -287,21 +215,47 @@ TELECOM • SECURITY • IT
 
 </div>
 
-<!-- ABOUT -->
-
 <div class="section">
 
 <h2>About Us</h2>
 
 <p style="text-align:center">
 
-Shree Vinayak Enterprises provides telecom and security infrastructure solutions including IP PBX systems, CCTV surveillance, biometric attendance systems and enterprise networking for organizations and institutions.
+Shree Vinayak Enterprises telecom aur security infrastructure solutions provide karta hai jaise IP PBX systems, CCTV surveillance, biometric attendance systems aur enterprise networking.
 
 </p>
 
 </div>
 
-<!-- SERVICES -->
+<div class="section">
+
+<h2>Our Impact</h2>
+
+<div class="services">
+
+<div class="service">
+<h2>500+</h2>
+<p>Projects</p>
+</div>
+
+<div class="service">
+<h2>120+</h2>
+<p>Clients</p>
+</div>
+
+<div class="service">
+<h2>10+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="service">
+<h2>24/7</h2>
+<p>Support</p>
+</div>
+
+</div>
+
+</div>
 
 <div class="section">
 
@@ -311,18 +265,14 @@ Shree Vinayak Enterprises provides telecom and security infrastructure solutions
 
 <div class="service">IP PBX Systems</div>
 <div class="service">IP Phones</div>
-<div class="service">CCTV Surveillance</div>
+<div class="service">CCTV</div>
 <div class="service">Biometric Attendance</div>
-<div class="service">Public Address Systems</div>
-<div class="service">IT Networking</div>
+<div class="service">Networking</div>
 <div class="service">Firewall Security</div>
-<div class="service">Video Surveillance</div>
 
 </div>
 
 </div>
-
-<!-- CLIENT BRANDS -->
 
 <div class="section">
 
@@ -331,32 +281,46 @@ Shree Vinayak Enterprises provides telecom and security infrastructure solutions
 <div class="clients">
 
 <div class="client">Matrix</div>
-<div class="client">Grandstream</div>
-<div class="client">Fortinet Firewall</div>
-<div class="client">D Link</div>
+<div class="client">CP Plus</div>
+<div class="client">Hikvision</div>
+<div class="client">Dahua</div>
 
 </div>
 
 </div>
-
-<!-- SOCIAL -->
 
 <div class="section">
 
-<h2>Connect With Us</h2>
+<h2>Google Reviews</h2>
 
-<div class="social">
+<div style="text-align:center">
 
-<a href="#">LinkedIn</a>
-<a href="#">Facebook</a>
-<a href="#">Instagram</a>
-<a href="#">YouTube</a>
+<a class="button" href="https://www.google.com/search?q=Shree+Vinayak+Enterprises+Bilaspur+review">
+
+⭐ Leave us a Google Review
+
+</a>
 
 </div>
 
 </div>
 
-<!-- INQUIRY FORM -->
+<div class="section">
+
+<h2>Our Location</h2>
+
+<div class="map">
+
+<iframe 
+src="https://maps.google.com/maps?q=Narayan%20Plaza%20Bilaspur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="300"
+style="border:0;">
+</iframe>
+
+</div>
+
+</div>
 
 <div class="section">
 
@@ -378,7 +342,13 @@ Shree Vinayak Enterprises provides telecom and security infrastructure solutions
 
 <div class="footer">
 
-© Shree Vinayak Enterprises
+<p>Shree Vinayak Enterprises</p>
+
+<p>Narayan Plaza, Link Road Bilaspur</p>
+
+<p>☎ 9826827103</p>
+
+<p>🌐 sveindia.co.in</p>
 
 </div>
 
@@ -394,14 +364,12 @@ var name=document.getElementById("name").value;
 var phone=document.getElementById("phone").value;
 var req=document.getElementById("requirement").value;
 
-var message = "New Enquiry from Website %0A%0A"
-+ "Name: " + name + "%0A"
-+ "Phone: " + phone + "%0A"
-+ "Requirement: " + req;
+var message="New Enquiry %0A%0A"
++"Name: "+name+"%0A"
++"Phone: "+phone+"%0A"
++"Requirement: "+req;
 
-var whatsappURL = "https://wa.me/919826827103?text=" + message;
-
-window.open(whatsappURL,'_blank');
+window.open("https://wa.me/919826827103?text="+message,'_blank');
 
 }
 
