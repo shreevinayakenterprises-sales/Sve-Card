@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -29,26 +28,25 @@ color:white;
 
 .hero{
 text-align:center;
-padding:60px 20px;
+padding:80px 20px;
 }
 
 .logo img{
 width:95px;
 background:white;
-padding:12px;
-border-radius:24px;
-box-shadow:0 10px 40px rgba(0,0,0,.4);
+padding:10px;
+border-radius:20px;
 }
 
 .company{
-font-size:30px;
+font-size:32px;
 font-weight:600;
-margin-top:12px;
+margin-top:10px;
 }
 
 .tagline{
-font-size:13px;
-letter-spacing:2px;
+letter-spacing:3px;
+font-size:12px;
 color:#c8a96a;
 }
 
@@ -56,7 +54,7 @@ color:#c8a96a;
 
 .buttons{
 max-width:420px;
-margin:30px auto;
+margin:35px auto;
 }
 
 .button{
@@ -64,18 +62,18 @@ display:flex;
 align-items:center;
 justify-content:center;
 gap:10px;
-padding:15px;
+padding:14px;
 margin:12px 0;
-border-radius:14px;
+border-radius:12px;
 background:rgba(255,255,255,0.08);
 color:white;
 text-decoration:none;
-transition:.3s;
+transition:0.4s;
 }
 
 .button:hover{
-transform:translateY(-3px);
-background:rgba(255,255,255,0.15);
+transform:translateY(-4px);
+background:rgba(255,255,255,0.18);
 }
 
 /* SECTION */
@@ -83,13 +81,13 @@ background:rgba(255,255,255,0.15);
 .section{
 max-width:1000px;
 margin:auto;
-padding:60px 20px;
+padding:80px 20px;
 }
 
 .section h2{
 text-align:center;
-margin-bottom:25px;
 color:#c8a96a;
+margin-bottom:25px;
 }
 
 /* SERVICES */
@@ -101,24 +99,24 @@ gap:20px;
 }
 
 .service{
-background:rgba(255,255,255,0.06);
+background:rgba(255,255,255,0.05);
 padding:25px;
-border-radius:16px;
+border-radius:14px;
 text-align:center;
 }
 
-/* CLIENTS */
+/* BRANDS */
 
 .clients{
 display:flex;
 justify-content:center;
-flex-wrap:wrap;
 gap:20px;
+flex-wrap:wrap;
 }
 
 .client{
-background:rgba(255,255,255,0.05);
-padding:12px 18px;
+padding:12px 20px;
+background:rgba(255,255,255,0.06);
 border-radius:10px;
 }
 
@@ -157,8 +155,7 @@ overflow:hidden;
 
 .footer{
 text-align:center;
-padding:30px;
-font-size:13px;
+padding:40px;
 color:#aaa;
 }
 
@@ -174,7 +171,19 @@ padding:16px;
 border-radius:50%;
 font-size:22px;
 text-decoration:none;
-box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+/* APPLE STYLE SCROLL ANIMATION */
+
+.reveal{
+opacity:0;
+transform:translateY(80px);
+transition:1.2s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
 }
 
 </style>
@@ -196,7 +205,7 @@ Shree Vinayak Enterprises
 </div>
 
 <div class="tagline">
-TELECOM • SECURITY • IT
+TELECOM • SECURITY • NETWORKING
 </div>
 
 <div class="buttons">
@@ -223,7 +232,7 @@ TELECOM • SECURITY • IT
 
 <!-- REVIEW -->
 
-<div class="section">
+<div class="section reveal">
 
 <h2>Review</h2>
 
@@ -231,7 +240,7 @@ TELECOM • SECURITY • IT
 
 <a class="button" href="https://g.page/r/CXtd26uTZGFXEAI/review" target="_blank">
 
-⭐ Give us a Review
+⭐ Give us a Google Review
 
 </a>
 
@@ -241,7 +250,7 @@ TELECOM • SECURITY • IT
 
 <!-- ABOUT -->
 
-<div class="section">
+<div class="section reveal">
 
 <h2>About Us</h2>
 
@@ -253,32 +262,32 @@ Shree Vinayak Enterprises provides telecom and security infrastructure solutions
 
 </div>
 
-<!-- COMPANY STATS -->
+<!-- STATS -->
 
-<div class="section">
+<div class="section reveal">
 
 <h2>Our Impact</h2>
 
 <div class="services">
 
 <div class="service">
-<h2>5000+</h2>
-<p>Projects Completed</p>
+<h2>500+</h2>
+Projects Completed
 </div>
 
 <div class="service">
-<h2>1200+</h2>
-<p>Happy Clients</p>
+<h2>120+</h2>
+Happy Clients
 </div>
 
 <div class="service">
-<h2>25+</h2>
-<p>Years Experience</p>
+<h2>10+</h2>
+Years Experience
 </div>
 
 <div class="service">
 <h2>24/7</h2>
-<p>Support</p>
+Support
 </div>
 
 </div>
@@ -287,7 +296,7 @@ Shree Vinayak Enterprises provides telecom and security infrastructure solutions
 
 <!-- SERVICES -->
 
-<div class="section">
+<div class="section reveal">
 
 <h2>Our Services</h2>
 
@@ -297,8 +306,7 @@ Shree Vinayak Enterprises provides telecom and security infrastructure solutions
 <div class="service">IP Phones</div>
 <div class="service">CCTV Surveillance</div>
 <div class="service">Biometric Attendance</div>
-<div class="service">Networking</div>
-<div class="service">Firewall Security</div>
+<div class="service">Enterprise Networking</div>
 
 </div>
 
@@ -306,16 +314,17 @@ Shree Vinayak Enterprises provides telecom and security infrastructure solutions
 
 <!-- BRANDS -->
 
-<div class="section">
+<div class="section reveal">
 
 <h2>Brands We Work With</h2>
 
 <div class="clients">
 
 <div class="client">Matrix</div>
+
 <div class="client">Grandstream</div>
+
 <div class="client">Fortinet</div>
-<div class="client">CP Plus</div>
 
 </div>
 
@@ -323,16 +332,16 @@ Shree Vinayak Enterprises provides telecom and security infrastructure solutions
 
 <!-- LOCATION -->
 
-<div class="section">
+<div class="section reveal">
 
 <h2>Our Location</h2>
 
 <div class="map">
 
-<iframe 
+<iframe
 src="https://maps.google.com/maps?q=Narayan%20Plaza%20Bilaspur&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%"
-height="300"
+height="320"
 style="border:0;">
 </iframe>
 
@@ -342,7 +351,7 @@ style="border:0;">
 
 <!-- INQUIRY -->
 
-<div class="section">
+<div class="section reveal">
 
 <h2>Send Inquiry</h2>
 
@@ -352,7 +361,7 @@ style="border:0;">
 
 <input id="phone" placeholder="Phone Number" required>
 
-<textarea id="requirement" placeholder="Your Requirement"></textarea>
+<textarea id="req" placeholder="Your Requirement"></textarea>
 
 <button type="submit">Submit</button>
 
@@ -362,13 +371,11 @@ style="border:0;">
 
 <div class="footer">
 
-<p>Shree Vinayak Enterprises</p>
-
-<p>Narayan Plaza, Link Road Bilaspur</p>
-
-<p>☎ 9826827103</p>
-
-<p>🌐 sveindia.co.in</p>
+Shree Vinayak Enterprises  
+<br>
+Narayan Plaza Link Road Bilaspur  
+<br>
+☎ 9826827103
 
 </div>
 
@@ -378,23 +385,45 @@ style="border:0;">
 
 <script>
 
+/* WhatsApp Inquiry */
+
 function sendToWhatsApp(){
 
 var name=document.getElementById("name").value;
 var phone=document.getElementById("phone").value;
-var req=document.getElementById("requirement").value;
+var req=document.getElementById("req").value;
 
-var message="New Enquiry %0A%0A"
-+"Name: "+name+"%0A"
-+"Phone: "+phone+"%0A"
-+"Requirement: "+req;
+var msg="New Inquiry %0A%0A"+
+"Name: "+name+"%0A"+
+"Phone: "+phone+"%0A"+
+"Requirement: "+req;
 
-window.open("https://wa.me/919826827103?text="+message,'_blank');
+window.open("https://wa.me/919826827103?text="+msg);
 
 }
+
+/* Apple Style Scroll Animation */
+
+window.addEventListener("scroll",function(){
+
+var reveals=document.querySelectorAll(".reveal");
+
+for(var i=0;i<reveals.length;i++){
+
+var windowHeight=window.innerHeight;
+var elementTop=reveals[i].getBoundingClientRect().top;
+
+if(elementTop < windowHeight-100){
+
+reveals[i].classList.add("active");
+
+}
+
+}
+
+});
 
 </script>
 
 </body>
-
 </html>
